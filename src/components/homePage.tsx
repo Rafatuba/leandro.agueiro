@@ -218,12 +218,7 @@ export function HomePage() {
                 src={imagemPessoas}
                 alt=""
               />
-              <a
-                className="text-xs"
-                href="https://br.freepik.com/fotos-gratis/pessoas-que-participam-do-evento-de-negocios_24483100.htm#fromView=search&page=3&position=3&uuid=38a0d7f3-10a3-4599-a652-43a05d6ea88f"
-              >
-                Imagem de freepik
-              </a>
+              <p className="text-xs">Imagem de freepik</p>
             </div>
           </div>
         </div>
