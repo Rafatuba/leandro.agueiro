@@ -8,7 +8,7 @@ export function QuemSomos() {
           </h2>
         </div>
 
-        <div className=" max-w-6xl  px-20 mx-auto mt-12 text-center sm:px-0 sm:grid-cols-2 md:mt-20 gap-x-8 md:grid-cols-4 gap-y-12 lg:gap-x-16 xl:gap-x-20">
+        <div className="max-w-6xl px-20 mx-auto mt-12 text-center sm:px-0 sm:grid-cols-2 md:mt-20 gap-x-8 md:grid-cols-4 gap-y-12 lg:gap-x-16 xl:gap-x-20">
           <div>
             <img
               className="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter"
@@ -19,7 +19,7 @@ export function QuemSomos() {
               Leandro Agueiro
             </p>
             <p className="mt-2 text-base font-normal text-gray-600 font-pj">
-              Fundador, Chairman, Executive Director
+              Fundador, Assistente Financeiro desde 2019
             </p>
           </div>
 

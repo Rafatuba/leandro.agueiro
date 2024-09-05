@@ -1,3 +1,5 @@
+import { Contato } from "./contato";
+
 export function Servicos() {
   return (
     <section className="py-12 bg-white sm:py-16 lg:py-20">
@@ -192,6 +194,9 @@ export function Servicos() {
             </p>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center text-center">
+        <Contato />
       </div>
     </section>
   );
