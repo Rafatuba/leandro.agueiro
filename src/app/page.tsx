@@ -1,4 +1,5 @@
 import { HomePage } from "@/components/homePage";
+import { QuemSomos } from "@/components/quemSomos";
 import { Servicos } from "@/components/servicos";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <HomePage />
       <Servicos />
+      <QuemSomos />
     </>
   );
 }
