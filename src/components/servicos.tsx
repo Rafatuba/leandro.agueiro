@@ -23,9 +23,9 @@ export function Servicos() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="#474747"
-              stroke-width="1"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="mx-auto"
             >
               <circle cx="12" cy="12" r="10" />
@@ -52,9 +52,9 @@ export function Servicos() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="#474747"
-              stroke-width="1"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="mx-auto"
             >
               <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z" />
@@ -82,9 +82,9 @@ export function Servicos() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="#474747"
-              stroke-width="1"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="mx-auto"
             >
               <rect width="18" height="18" x="3" y="3" rx="2" />
@@ -109,9 +109,9 @@ export function Servicos() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="#474747"
-              stroke-width="1"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="mx-auto"
             >
               <line x1="3" x2="21" y1="22" y2="22" />
@@ -141,9 +141,9 @@ export function Servicos() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="#474747"
-              stroke-width="1"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="mx-auto"
             >
               <path d="M16 2v4" />
@@ -172,9 +172,9 @@ export function Servicos() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="#474747"
-              stroke-width="1"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="mx-auto"
             >
               <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" />
