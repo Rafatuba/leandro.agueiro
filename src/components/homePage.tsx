@@ -1,13 +1,56 @@
+"use client";
+
 import imagemPessoas from "../../public/pessoas.jpg";
 import Image from "next/image";
 import { Contato } from "./contato";
 
+import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
+
+// gsap.registerPlugin(ScrollTrigger);
+
 export function HomePage() {
+  const imageRef = useRef(null);
+  const tituloRef = useRef(null);
+
+  useEffect(() => {
+    const imagePessoas = imageRef.current;
+    const titulo = tituloRef.current;
+
+    gsap.fromTo(
+      imagePessoas,
+      {
+        opacity: 0,
+        scale: 0.5,
+      },
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 1,
+        ease: "power4.out",
+      }
+    );
+
+    gsap.fromTo(
+      titulo,
+      {
+        opacity: 0,
+        x: -100,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+      }
+    );
+  }, []);
+
   return (
     <div className="bg-gray-50">
       <header className="py-4 md:py-6">
         <div className="container px-4 mx-auto sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center lg:justify-start 2xl:ml-32 gap-3">
+          <div className="flex items-center justify-center lg:justify-start 2xl:ml-32 xl:ml-0 gap-3">
             <div className="flex-shrink-0">
               <a
                 href="#"
@@ -68,14 +111,17 @@ export function HomePage() {
           <div className="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-32">
             <div>
               <div className="text-center lg:text-left">
-                <h1 className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl font-pj">
+                <h1
+                  className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl font-pj opacity-0"
+                  ref={tituloRef}
+                >
                   Mantenha as finanças do seu negócio sob controle.
                 </h1>
                 <p className="mt-2 text-lg text-gray-600 sm:mt-8 font-inter">
                   Se está faltando tempo para{" "}
                   <strong>gerenciar seu negócio</strong>, contrate já um{" "}
-                  <strong>ASSISTENTE FINANCEIRO VIRTUAL</strong> e deixe sua
-                  vida melhor.
+                  <strong>ASSISTENTE FINANCEIRO VIRTUAL</strong> e tranforme sua
+                  vida para melhor.
                 </p>
                 <Contato />
               </div>
@@ -150,11 +196,12 @@ export function HomePage() {
 
             <div className="flex flex-col justify-center items-center">
               <Image
-                className="w-[25rem] rounded-md"
+                className="w-[25rem] rounded-md opacity-0"
                 src={imagemPessoas}
                 alt=""
+                ref={imageRef}
               />
-              <p className="text-xs">Imagem de freepik</p>
+              {/* <p className="text-xs">Imagem de freepik</p> */}
             </div>
           </div>
         </div>
