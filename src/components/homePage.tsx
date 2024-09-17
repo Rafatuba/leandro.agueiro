@@ -7,6 +7,7 @@ import { Contato } from "./contato";
 import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
+import { Links } from "./links";
 
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -48,7 +49,7 @@ export function HomePage() {
 
   return (
     <div className="bg-gray-50">
-      <header className="py-4 md:py-6">
+      <header className="py-4 md:py-8 bg-green-900">
         <div className="container px-4 mx-auto sm:px-6 lg:px-8">
           <div className="flex items-center justify-center lg:justify-start 2xl:ml-32 xl:ml-0 gap-3">
             <div className="flex-shrink-0">
@@ -57,51 +58,30 @@ export function HomePage() {
                 title=""
                 className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
               >
-                <img
+                <Image
                   className="w-auto h-8"
                   src="https://d33wubrfki0l68.cloudfront.net/682a555ec15382f2c6e7457ca1ef48d8dbb179ac/f8cd3/images/logo.svg"
                   alt="logo do site"
+                  width={100}
+                  height={100}
                 />
               </a>
             </div>
 
-            {/* <div className="hidden lg:flex lg:ml-10 xl:ml-16 lg:items-center lg:justify-center lg:space-x-8 xl:space-x-16">
-              <a
-                href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-              >
-                {" "}
-                Serviços{" "}
-              </a>
-
-              <a
-                href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-              >
-                {" "}
-                Industries{" "}
-              </a>
-
-              <a
-                href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-              >
-                {" "}
-                Fees{" "}
-              </a>
-
-              <a
-                href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-              >
-                {" "}
-                About Rareblocks{" "}
-              </a>
-            </div> */}
+            <div className="hidden lg:flex lg:ml-10 xl:ml-16 lg:items-center lg:justify-center lg:space-x-8 xl:space-x-16">
+              <Links
+              titulo="Serviços"
+              url="https://www.google.com"
+              />
+              <Links
+              titulo="Quem somos"
+              url="https://www.google.com"
+              />
+              <Links
+              titulo="Contatos"
+              url="https://www.google.com"
+              />
+            </div>
           </div>
         </div>
       </header>
@@ -126,7 +106,7 @@ export function HomePage() {
                 <Contato />
               </div>
 
-              <div className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
+              {/* <div className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
                 <div className="flex items-center">
                   <p className="text-3xl font-medium text-gray-900 sm:text-4xl font-pj">
                     2943
@@ -191,12 +171,12 @@ export function HomePage() {
                     financeiras
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="flex flex-col justify-center items-center">
               <Image
-                className="w-[25rem] rounded-md opacity-0"
+                className="w-[22rem] rounded-md opacity-0"
                 src={imagemPessoas}
                 alt=""
                 ref={imageRef}

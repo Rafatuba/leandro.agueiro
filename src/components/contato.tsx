@@ -19,7 +19,7 @@ export function Contato() {
         <a href="https://www.whatsapp.com">
           <button
             // type="submit"
-            className="inline-flex px-6 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-lg focus:outline-none focus:bg-gray-600 font-pj hover:bg-gray-600"
+            className="inline-flex px-6 py-3 text-lg font-bold text-white transition-all duration-200 bg-green-900 rounded-lg focus:outline-none focus:bg-gray-600 font-pj hover:bg-gray-600"
           >
             Falar por Whatsapp
           </button>
