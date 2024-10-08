@@ -15,14 +15,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
-      <link
-  rel="icon"
-  href="/saving.png"
-  type="image/png"
-  sizes="32x32"
-/>
+        <link rel="icon" href="/saving.png" type="image/png" sizes="32x32" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>

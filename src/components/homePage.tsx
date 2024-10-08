@@ -1,7 +1,8 @@
 "use client";
 
-import imagemPessoas from "../../public/pessoas.jpg";
 import Image from "next/image";
+import imagemPessoas from "../../public/pessoas.jpg";
+import logo from "../../public/logo-le.png";
 import { Contato } from "./contato";
 
 import gsap from "gsap";
@@ -49,44 +50,29 @@ export function HomePage() {
 
   return (
     <div className="bg-gray-50">
-      <header className="py-4 md:py-8 bg-green-900">
+      <header className="py-4 md:py-4 bg-green-900">
         <div className="container px-4 mx-auto sm:px-6 lg:px-8">
           <div className="flex items-center justify-center lg:justify-start 2xl:ml-32 xl:ml-0 gap-3">
             <div className="flex-shrink-0">
               <a
-                href="#"
-                title=""
-                className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                href="/"
+                title="Leandro Agueiro"
+                className="flex rounded outline-none "
               >
-                <Image
-                  className="w-auto h-8"
-                  src="https://d33wubrfki0l68.cloudfront.net/682a555ec15382f2c6e7457ca1ef48d8dbb179ac/f8cd3/images/logo.svg"
-                  alt="logo do site"
-                  width={100}
-                  height={100}
-                />
+                <Image className="w-24" src={logo} alt="logo do site" />
               </a>
             </div>
 
             <div className="hidden lg:flex lg:ml-10 xl:ml-16 lg:items-center lg:justify-center lg:space-x-8 xl:space-x-16">
-              <Links
-              titulo="Serviços"
-              url="https://www.google.com"
-              />
-              <Links
-              titulo="Quem somos"
-              url="https://www.google.com"
-              />
-              <Links
-              titulo="Contatos"
-              url="https://www.google.com"
-              />
+              <Links titulo="Serviços" url="#servicos" />
+              <Links titulo="Quem somos" url="#quemSomos" />
+              <Links titulo="Contatos" url="https://www.google.com" />
             </div>
           </div>
         </div>
       </header>
 
-      <section className="pt-12 pb-12 sm:pb-16 lg:pt-8">
+      <section className="py-12 sm:my-12 sm:pb-16 lg:pt-8">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-32">
             <div>
